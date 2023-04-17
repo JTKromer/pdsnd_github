@@ -186,7 +186,7 @@ def raw_data(df):
                     break
             if reply2 not in ['yes', 'no']:
                 print("\nThat entry is not recognized.")
-                reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': LINE 188").lower()
+                reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': ").lower()
                 if reply2 == 'no':
                     break
             if reply2 == 'yes':
