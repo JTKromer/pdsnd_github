@@ -5,7 +5,7 @@ March 29, 2023
 Bikeshare
 
 ### Description
-This is an end-user terminal to interactively explore data from a bikeshare data operating in Chicago, Newy York City and Washington DC.
+This is an end-user terminal to interactively explore data from a bikeshare data operating in Chicago, Newy York City and Washington DC. End users select a city to explore, via terminal questions and prompts.
 
 ### Files used
 bikeshare.py
