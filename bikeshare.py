@@ -174,6 +174,7 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
+    """Prompts end user if they would like to see 5 rows of raw data, then addtional rows"""
     #referenced https://knowledge.udacity.com/questions/110782
     reply = input("\nWould you like to see a few lines of the raw data? Type 'yes' or 'no': ").lower()
     row_ns = 0
@@ -181,18 +182,18 @@ def raw_data(df):
         while True:
             print(df.iloc[row_ns:row_ns+5])
             row_ns += 5
-            reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': LINE 184").lower()
+            reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': ").lower()
             if reply2 == 'no':
                     break
             if reply2 not in ['yes', 'no']:
                 print("\nThat entry is not recognized.")
-                reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': LINE 188").lower()
+                reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': ").lower()
                 if reply2 == 'no':
                     break
             if reply2 == 'yes':
                 print(df.iloc[row_ns:row_ns+5])
                 row_ns += 5
-                reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': LINE 195").lower()
+                reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': ").lower()
                 if reply2 == 'no':
                     break
     
