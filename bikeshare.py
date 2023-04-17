@@ -174,6 +174,7 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
+    """Prompts end user if they would like to see 5 rows of raw data, then addtional rows"""
     #referenced https://knowledge.udacity.com/questions/110782
     reply = input("\nWould you like to see a few lines of the raw data? Type 'yes' or 'no': ").lower()
     row_ns = 0
