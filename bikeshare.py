@@ -181,7 +181,7 @@ def raw_data(df):
         while True:
             print(df.iloc[row_ns:row_ns+5])
             row_ns += 5
-            reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': LINE 184").lower()
+            reply2 = input("\nWould you like to see additional lines of the raw data? Type 'yes' or 'no': ").lower()
             if reply2 == 'no':
                     break
             if reply2 not in ['yes', 'no']:
